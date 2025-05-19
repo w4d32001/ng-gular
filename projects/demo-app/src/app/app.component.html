@@ -1,0 +1,22 @@
+<div class="h-svh flex flex-col items-center justify-between py-10 overflow-hidden">
+  <gl-button color="danger" size="small" (glClick)="click()">
+    <div class="flex items-center justify-center gap-4">
+      <span>Hola</span>
+      <fa-icon [icon]="faCoffee" ></fa-icon>
+    </div>
+  </gl-button>
+  <gl-accordion>
+    <gl-accordion-item id="1">
+      <gl-accordion-thrower>Este activa el accordion</gl-accordion-thrower>
+      <gl-accordion-content>
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Sed alias eaque
+        nulla quam numquam esse? Ad, omnis veniam. In veniam assumenda porro ad
+        sint, aliquid dignissimos iste temporibus cum dolores.
+      </gl-accordion-content>
+    </gl-accordion-item>
+  </gl-accordion>
+  <gl-avatar>
+    <gl-avatar-image src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTCsY7DNAfHi3hx_4I0W1sgXLVOnqPEiWa7OQ&s"></gl-avatar-image>
+    <gl-avatar-fallback>Fallback Content</gl-avatar-fallback>
+  </gl-avatar>
+</div>

@@ -1,0 +1,22 @@
+<div
+  class="flex w-full h-full flex-col border-b border-gray-300 py-2 "
+>
+  <div (click)="toggle()" class="flex w-full">
+    <ng-content select="gl-accordion-thrower"></ng-content>
+  </div>
+  <div
+    class="transition-all duration-600 ease-in-out overflow-hidden"
+    [class.max-h-0]="!isOpen"
+    [class.max-h-96]="isOpen"
+  >
+    <div
+      class="transition-all duration-600 ease-in-out transform"
+      [class.opacity-0]="!isOpen"
+      [class.translate-y-4]="!isOpen"
+      [class.opacity-100]="isOpen"
+      [class.translate-y-0]="isOpen"
+    >
+      <ng-content select="gl-accordion-content"></ng-content>
+    </div>
+  </div>
+</div>

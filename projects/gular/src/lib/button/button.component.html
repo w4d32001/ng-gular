@@ -1,0 +1,11 @@
+<button
+  [type]="type"
+  class="py-2 px-3"
+  [class]="getClass()"
+  [disabled]="disabled"
+  (click)="onClick()"
+>
+  <span class="flex items-center justify-center">
+      <ng-content></ng-content>
+  </span>
+</button>
